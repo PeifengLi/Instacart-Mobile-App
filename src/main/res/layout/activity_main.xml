@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="2dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/Db"
+            android:gravity="center"
+            android:layout_marginStart="40dp"
+            />
+        <Spinner
+            android:id="@+id/spinDb"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:entries="@array/selectDB"
+            android:layout_marginStart="10dp"/>
+        <RadioGroup
+            android:id="@+id/RadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="200dp"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/MySQL"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/mysql" />
+            <RadioButton
+                android:id="@+id/Redshift"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:text="@string/red" />
+        </RadioGroup>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_gravity="center"
+        android:textSize="11sp"
+        android:text="@string/query"/>
+
+    <EditText
+        android:id="@+id/query"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:lines="5"
+        android:background="@drawable/box_stroke"
+        android:layout_marginTop="1dp"
+        android:hint="@string/hint"
+        android:gravity="start"
+        android:inputType="textMultiLine"
+        android:autofillHints=""
+   />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        tools:ignore="UselessParent">
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:backgroundTint="@color/btn_color"
+            android:text="@string/btn"
+            android:textAlignment="gravity"
+            android:textColor="#ff000000"
+            android:textSize="8sp"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="400dp"
+            android:gravity="center"
+            android:text="@string/Time" />
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp"
+            android:gravity="center"
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:background="@drawable/result_box"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+        <TableLayout
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />
+
+    </ScrollView>
+
+</LinearLayout>

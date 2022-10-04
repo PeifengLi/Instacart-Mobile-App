@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Project</string>
+    <string name="btn">run</string>
+    <string name="Time">Time Elapsed</string>
+    <string name="hint">Query</string>
+    <string name="Db">Database:</string>
+    <string name="mysql">MySQL</string>
+    <string name="red">Redshift</string>
+    <string name="query">Query</string>
+
+</resources>

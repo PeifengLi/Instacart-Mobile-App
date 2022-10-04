@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="selectDB">
+        <item>Instacart</item>
+        <item>ABC Retail</item>
+    </string-array>
+
+</resources>
