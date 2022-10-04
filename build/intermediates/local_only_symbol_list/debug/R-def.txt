@@ -1,0 +1,36 @@
+R_DEF: Internal format may change without notice
+local
+array selectDB
+color black
+color btn_color
+color purple_200
+color purple_500
+color purple_700
+color teal_200
+color teal_700
+color white
+drawable box_stroke
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable result_box
+id MySQL
+id RadioGroup
+id Redshift
+id btn
+id query
+id result
+id scroll
+id spinDb
+id time
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_round
+string Db
+string Time
+string app_name
+string btn
+string hint
+string mysql
+string query
+string red
+style Theme.Project2
